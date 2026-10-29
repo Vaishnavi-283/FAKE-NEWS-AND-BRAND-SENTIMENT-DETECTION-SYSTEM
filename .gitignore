@@ -1,0 +1,29 @@
+# Dependencies & Builds
+node_modules/
+dist/
+dist-ssr/
+uploads/
+
+# Environment Variables & Secrets (Keep private)
+.env
+.env.*
+!.env.example
+.env.local
+client/.env
+server/.env
+
+# AI Agent & Internal Tooling Metadata
+.agent/
+.agents/
+.gsd/
+.gemini/
+adapters/
+scripts/
+
+# Logs & Temporary files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db

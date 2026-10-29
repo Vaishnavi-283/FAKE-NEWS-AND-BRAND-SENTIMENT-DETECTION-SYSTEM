@@ -1,0 +1,191 @@
+.detection-page { min-height: 100%; }
+
+.detection-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.detection-panel { padding: 2rem; }
+
+.detection-textarea {
+  min-height: 260px !important;
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  resize: vertical;
+}
+
+.char-count {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-align: right;
+  margin-top: 4px;
+}
+
+.input-hint {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+/* Dropzone */
+.dropzone {
+  border: 2px dashed var(--border-active);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  background: rgba(108,92,231,0.03);
+}
+.dropzone:hover, .dropzone.dragover {
+  border-color: var(--accent-purple);
+  background: rgba(108,92,231,0.08);
+}
+
+.file-selected {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.file-name {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-medium);
+  color: var(--text-primary);
+  word-break: break-all;
+}
+
+/* Sample chips */
+.sample-chips {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.sample-chip {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0.625rem 0.875rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-align: left;
+  transition: all var(--transition-fast);
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semi);
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+}
+.sample-chip:hover {
+  border-color: var(--accent-purple);
+  background: rgba(108,92,231,0.08);
+  color: var(--text-primary);
+}
+.sample-chip-preview {
+  font-size: 0.65rem;
+  font-weight: var(--fw-regular);
+  color: var(--text-muted);
+}
+
+/* Illustration */
+.detection-illustration {
+  position: sticky;
+  top: 1.5rem;
+}
+.illustration-card {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+.illustration-icon {
+  font-size: 3rem;
+  width: 80px;
+  height: 80px;
+  background: rgba(108,92,231,0.1);
+  border: 1px solid rgba(108,92,231,0.2);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.illustration-card h3 {
+  font-size: var(--text-lg);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+}
+.illustration-card p {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+.illustration-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.illustration-feature {
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  text-align: left;
+  font-weight: var(--fw-medium);
+}
+
+@media (max-width: 1024px) {
+  .detection-layout { grid-template-columns: 1fr; }
+  .detection-illustration { display: none; }
+}
+
+/* ── Discovery Import Banner ──────────────────────────────── */
+.import-banner-pill {
+  font-size: 0.65rem;
+  font-weight: var(--fw-semi);
+  color: var(--accent-purple);
+  background: rgba(108, 92, 231, 0.12);
+  border: 1px solid rgba(108, 92, 231, 0.3);
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+}
+
+.discovery-import-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, rgba(108, 92, 231, 0.1) 0%, rgba(0, 212, 255, 0.08) 100%);
+  border: 1px solid rgba(108, 92, 231, 0.3);
+  border-radius: var(--radius-md);
+  margin-bottom: 0.75rem;
+}
+
+.import-banner-sparkle {
+  font-size: 1.1rem;
+  color: #FFA502;
+  flex-shrink: 0;
+}
+
+.import-banner-text {
+  font-size: var(--text-xs);
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.import-banner-text strong {
+  color: var(--accent-cyan);
+}

@@ -1,0 +1,159 @@
+/* ================================================================
+   Meiora AI – Design System Variables
+   ================================================================ */
+
+:root {
+  /* ── Colors ─────────────────────────────────────────── */
+  --bg-base:       #070B20;
+  --bg-elevated:   #0D1133;
+  --bg-card:       #111840;
+  --bg-card-hover: #161E4E;
+  --bg-sidebar:    #090D28;
+  --bg-input:      #0F1535;
+  --bg-overlay:    rgba(7, 11, 32, 0.85);
+  --bg-nav-glass:  rgba(7, 11, 32, 0.85);
+
+  --border-default: rgba(108, 92, 231, 0.15);
+  --border-active:  rgba(108, 92, 231, 0.5);
+  --border-subtle:  rgba(255, 255, 255, 0.06);
+
+  --accent-purple:   #6C5CE7;
+  --accent-purple-l: #8B7FF0;
+  --accent-cyan:     #00D4FF;
+  --accent-cyan-d:   #00A8CC;
+
+  --success:   #00C853;
+  --success-bg: rgba(0, 200, 83, 0.12);
+  --danger:    #FF4757;
+  --danger-bg:  rgba(255, 71, 87, 0.12);
+  --warning:   #FFA502;
+  --warning-bg: rgba(255, 165, 2, 0.12);
+  --info:      #00D4FF;
+  --info-bg:    rgba(0, 212, 255, 0.12);
+
+  --text-primary:   #E8EAFF;
+  --text-secondary: #9BA3C8;
+  --text-muted:     #5C6490;
+  --text-inverted:  #070B20;
+
+  /* ── Gradients ───────────────────────────────────────── */
+  --gradient-brand:  linear-gradient(135deg, #6C5CE7 0%, #00D4FF 100%);
+  --gradient-purple: linear-gradient(135deg, #6C5CE7 0%, #9B59B6 100%);
+  --gradient-card:   linear-gradient(145deg, #111840 0%, #0D1133 100%);
+  --gradient-hero:   linear-gradient(135deg, #070B20 0%, #0F1535 50%, #151B50 100%);
+  --gradient-glow:   radial-gradient(ellipse at center, rgba(108, 92, 231, 0.15) 0%, transparent 70%);
+
+  /* ── Typography ──────────────────────────────────────── */
+  --font-body:    'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+
+  --text-xs:  0.75rem;
+  --text-sm:  0.875rem;
+  --text-md:  1rem;
+  --text-lg:  1.125rem;
+  --text-xl:  1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-semi:    600;
+  --fw-bold:    700;
+  --fw-black:   900;
+
+  /* ── Spacing ─────────────────────────────────────────── */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* ── Radius ──────────────────────────────────────────── */
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   14px;
+  --radius-xl:   20px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ─────────────────────────────────────────── */
+  --shadow-sm:    0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md:    0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-lg:    0 8px 40px rgba(0, 0, 0, 0.5);
+  --shadow-glow:  0 0 30px rgba(108, 92, 231, 0.25);
+  --shadow-cyan:  0 0 20px rgba(0, 212, 255, 0.2);
+
+  /* ── Transitions ─────────────────────────────────────── */
+  --transition-fast:   150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow:   400ms ease;
+
+  /* ── Sidebar ─────────────────────────────────────────── */
+  --sidebar-width:          240px;
+  --sidebar-collapsed-width: 64px;
+
+  /* ── Z-Index ─────────────────────────────────────────── */
+  --z-base:    1;
+  --z-sidebar: 100;
+  --z-modal:   200;
+  --z-toast:   300;
+}
+
+/* ================================================================
+   Meiora AI – Light Theme Tokens
+   ================================================================ */
+[data-theme='light'] {
+  /* ── Colors ─────────────────────────────────────────── */
+  --bg-base:       #F4F6FC;
+  --bg-elevated:   #FFFFFF;
+  --bg-card:       #FFFFFF;
+  --bg-card-hover: #F0F3FB;
+  --bg-sidebar:    #FFFFFF;
+  --bg-input:      #EEF2F9;
+  --bg-overlay:    rgba(244, 246, 252, 0.88);
+  --bg-nav-glass:  rgba(255, 255, 255, 0.88);
+
+  --border-default: rgba(108, 92, 231, 0.16);
+  --border-active:  rgba(108, 92, 231, 0.6);
+  --border-subtle:  rgba(0, 0, 0, 0.08);
+
+  --accent-purple:   #6C5CE7;
+  --accent-purple-l: #5B4BC4;
+  --accent-cyan:     #0099CC;
+  --accent-cyan-d:   #007A99;
+
+  --success:   #00A844;
+  --success-bg: rgba(0, 168, 68, 0.12);
+  --danger:    #E83344;
+  --danger-bg:  rgba(232, 51, 68, 0.12);
+  --warning:   #E69500;
+  --warning-bg: rgba(230, 149, 0, 0.12);
+  --info:      #0099CC;
+  --info-bg:    rgba(0, 153, 204, 0.12);
+
+  --text-primary:   #0F172A;
+  --text-secondary: #334155;
+  --text-muted:     #64748B;
+  --text-inverted:  #FFFFFF;
+
+  /* ── Gradients ───────────────────────────────────────── */
+  --gradient-brand:  linear-gradient(135deg, #6C5CE7 0%, #0099CC 100%);
+  --gradient-purple: linear-gradient(135deg, #6C5CE7 0%, #8E44AD 100%);
+  --gradient-card:   linear-gradient(145deg, #FFFFFF 0%, #F5F7FD 100%);
+  --gradient-hero:   linear-gradient(135deg, #F8F9FE 0%, #EEF2FD 50%, #E3E9FA 100%);
+  --gradient-glow:   radial-gradient(ellipse at center, rgba(108, 92, 231, 0.08) 0%, transparent 70%);
+
+  /* ── Shadows ─────────────────────────────────────────── */
+  --shadow-sm:    0 2px 8px rgba(18, 23, 56, 0.06);
+  --shadow-md:    0 4px 18px rgba(18, 23, 56, 0.08);
+  --shadow-lg:    0 8px 30px rgba(18, 23, 56, 0.12);
+  --shadow-glow:  0 0 25px rgba(108, 92, 231, 0.15);
+  --shadow-cyan:  0 0 20px rgba(0, 153, 204, 0.15);
+}
+

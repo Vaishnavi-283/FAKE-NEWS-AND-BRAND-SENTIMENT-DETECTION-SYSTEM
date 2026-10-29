@@ -1,0 +1,15 @@
+{
+  "name": "meiora-ai-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Meiora AI – Fake News and Brand Sentiment Detection System",
+  "scripts": {
+    "dev": "concurrently -n \"CLIENT,SERVER\" -c \"cyan,magenta\" \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
