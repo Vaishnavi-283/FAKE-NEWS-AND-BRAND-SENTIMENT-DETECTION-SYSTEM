@@ -19,6 +19,9 @@ const getGeminiClient = () => {
 
 // Candidate models in priority order with automatic fallback
 const CANDIDATE_MODELS = [
+  'gemini-3-flash-preview',
+  'gemini-3.1-flash-lite',
+  'gemini-3.5-flash-lite',
   'gemini-flash-lite-latest',
   'gemini-flash-latest',
   'gemini-pro-latest',
